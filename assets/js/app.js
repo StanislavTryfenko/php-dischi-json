@@ -10,9 +10,10 @@ createApp({
 
     },
     mounted() {
-        axios.get('assets/json/dischi.json')
+        axios.get('./assets/php_api/api_dischi.php')
             .then(response => {
                 this.dischi = response.data
+                console.log(this.dischi);
             })
             .catch(error => {
                 console.error('controlla il percorso');
