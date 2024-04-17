@@ -10,7 +10,7 @@ createApp({
 
     },
     mounted() {
-        axios.get('./assets/php_api/api_dischi.php')
+        axios.get('./php_api/api_dischi.php')
             .then(response => {
                 this.dischi = response.data
                 console.log(this.dischi);
