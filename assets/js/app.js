@@ -4,10 +4,10 @@ createApp({
     data() {
         return {
             dischi: [],
+            showModal: false,
         }
     },
     methods: {
-
     },
     mounted() {
         axios.get('./php_api/api_dischi.php')
